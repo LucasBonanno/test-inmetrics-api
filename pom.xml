@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.inmetrics</groupId>
+	<artifactId>teste-inmetrics-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<developers>
+		<developer>
+			<name>Lucas Bonanno Casanova</name>
+			<email>lucas.casanova@inmetrics.com.br</email>
+			<organization>Inmetrics</organization>
+			<organizationUrl>http://www.inmetrics.com.br</organizationUrl>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.plugin>3.7.0</maven.compiler.plugin>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<jackson.core.version>2.10.0</jackson.core.version>
+		<jackson.databind.version>2.11.2</jackson.databind.version>
+		<rest.assured.version>3.0.6</rest.assured.version>
+		<io.cucumber.version>5.2.0</io.cucumber.version>
+		<junit.version>4.13</junit.version>
+	<!-- <javafaker.version>1.0.2</javafaker.version> -->
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.databind.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest.assured.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${io.cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${io.cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.github.javafaker</groupId> -->
+<!-- 			<artifactId>javafaker</artifactId> -->
+<!-- 			<version>${javafaker.version}</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

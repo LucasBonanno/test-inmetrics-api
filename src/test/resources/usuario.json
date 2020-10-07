@@ -1,0 +1,11 @@
+{
+	"nome": "Teste API Cadastrar",
+	"sexo": "m",
+	"cpf": "758.733.860-80",
+	"departamentoId": 1,
+	"cargo": "Analista de testes de Software",
+	"admissao": "01/01/2006",
+	"salario": "7.000,00",
+	"comissao": "500,00",
+	"tipoContratacao": "clt"
+}
